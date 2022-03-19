@@ -18,6 +18,7 @@ import Melisha from '../../assets/WIDC/Melisha Ghimire.jpg'
 import Shreyasha from '../../assets/WIDC/Shreyasha.jpg'
 import Sachin from '../../assets/WIDC/Sachin Karanjit.png'
 import Rakesh from '../../assets/WIDC/Rakesh Katuwal.jpg'
+import Aanchal from '../../assets/WIDC/Aanchal.jpg'
 import {
   Grid,
   Image,
@@ -113,8 +114,7 @@ const AboutEvent = () => {
       <div style={pageStyles.middleTitleUnderline}/>
       <br/>
       <div style={pageStyles.description}>
-          Women in Data conference is a celebration marking Women's History Month and Open Data Day 2022 featuring a gender data boot camp, workshop on data visualization, a panel discussion on gender bias in AI, and a networking event for female professionals and enthusiasts in data. The conference has been organized by The Asia Foundation (TAF) under its project “Data for Development Nepal” in partnership with Girls in Tech - Nepal, Open Knowledge Nepal (OKN), Women Leaders in Technology (WLiT), and Women in Science, Technology, Engineering, Art, and Mathematics (WiSTEAM) to promote inclusive ecosystem in data development for Nepal.
-      </div>
+        Women in Data conference is a celebration marking Women's History Month and Open Data Day 2022 featuring a gender data boot camp, workshop on data visualization, a panel discussion on gender bias in AI, and a networking event for female professionals and enthusiasts in data. The conference has been organized by The Asia Foundation (TAF) under its project “Data for Development Nepal” in partnership with Girls in Tech - Nepal, Open Knowledge Nepal (OKN), Women Leaders in Technology (WLiT), and Women in STEAM (WiSTEAM) to promote inclusive ecosystem in data development for Nepal.      </div>
       <br/>
       <br/>
       <br/>
@@ -652,7 +652,7 @@ const GITEvent = () => {
         <br/>
         <Grid stackable >
         <Grid.Row>
-          <Grid.Column width={5} style={pageStyles.peopleDetail}>
+          <Grid.Column width={4} style={pageStyles.peopleDetail}>
             <Popup
               style={pageStyles.popupStyle}
               content={<div style={pageStyles.bio}>
@@ -667,11 +667,13 @@ const GITEvent = () => {
                   <Image src={Rakesh} style={pageStyles.peopleImage} circular/>
                   <b>Rakesh Katuwal</b>
                   <div style={pageStyles.peopleDetailDesignation}>Ph.D.</div>
+                  <div style={pageStyles.peopleDetailDesignation}>Manager of AI Services and Products department,</div>
+                  <div style={pageStyles.peopleDetailDesignation}>Fusemachines</div>
                 </div>
               }
             />
           </Grid.Column>
-          <Grid.Column width={6} style={pageStyles.peopleDetail}>
+          <Grid.Column width={4} style={pageStyles.peopleDetail}>
             <Popup
               style={pageStyles.popupStyle}
               content={<div style={pageStyles.bio}>
@@ -697,7 +699,7 @@ const GITEvent = () => {
             />
 
           </Grid.Column>
-          <Grid.Column width={5} style={pageStyles.peopleDetail}>
+          <Grid.Column width={4} style={pageStyles.peopleDetail}>
             <Popup
               style={pageStyles.popupStyle}
               content={<div style={pageStyles.bio}>
@@ -714,6 +716,26 @@ const GITEvent = () => {
                   <b>Shreyasha Paudel</b>
                   <div style={pageStyles.peopleDetailDesignation}>Research Fellow</div>
                   <div style={pageStyles.peopleDetailDesignation}>NAAMII</div>
+                </div>
+              }
+            />
+          </Grid.Column>
+          <Grid.Column width={4} style={pageStyles.peopleDetail}>
+            <Popup
+              style={pageStyles.popupStyle}
+              content={<div style={pageStyles.bio}>
+                Aanchal Kunwar was born in Nepal and had spent the first 19 years of her life in Nepal. Throughout her childhood, she lived across Nepal including Panchthar Phidim, Katari, Chaurjahari, Biratnagar, and Kathmandu. She moved to the United States after completing her ISc. from St. Xavier’s Campus in 2003. During her time in the US, she completed her Bachelor’s degree in Math and Economics as well as MBA. She worked in the corporate sector for almost 15 years, where she first worked for Carlson Wagonlit Travel (CWT) while doing her MBA, building the experience in consulting, program management, corporate strategy, and product management. Then she joined Amazon in 2016 and worked there for 5 years in various capacities including managing a business, building abuse prevention programs and products, and establishing Amazon retail in new markets like Sweden, Poland, Saudi Arabia, and Egypt. She is now Managing Director at Daraz Nepal, country’s leading e-commerce platform. She is the first women MD among all Daraz ventures.               </div>}
+              eventsEnabled={eventsEnabled}
+              onClose={() => setOpen({aanchal: false})}
+              onOpen={() => setOpen({aanchal: true})}
+              open={open.aanchal}
+              position='right center'
+              trigger={
+                <div>
+                  <Image src={Aanchal} style={pageStyles.peopleImage} circular/>
+                  <b>Aanchal Kunwar</b>
+                  <div style={pageStyles.peopleDetailDesignation}>Managing Director</div>
+                  <div style={pageStyles.peopleDetailDesignation}>Daraz Nepal</div>
                 </div>
               }
             />
